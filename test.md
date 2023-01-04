@@ -14,6 +14,7 @@ def reliable_send(data):
 def shell():
     while True:
         command = reliable_recv()
+        print("Command Recieved")
         if command == 'say':
             print("Hello World")
         elif command == 'pwd':
