@@ -3,6 +3,7 @@ def reliable_recv():
     data = ""
     while True:
         try:
+            print(data)
             data = data + connection_to_attacker.recv(1024).decode().rstrip()
             return json.loads(data)
         except ValueError:
