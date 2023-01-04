@@ -32,6 +32,7 @@ def shell():
 
 def connection():
     while True:
+        print("connection sending")
         #random.randint(5,15)
         time.sleep(5)
         try:
