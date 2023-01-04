@@ -1,4 +1,5 @@
 def reliable_recv():
+    print("Reliably reieved")
     data = ""
     while True:
         try:
