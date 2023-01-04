@@ -23,7 +23,7 @@ def shell():
                 reliable_send(files)
             except:
                 pass
-         else:
+        else:
             pass
 
 def connection():
