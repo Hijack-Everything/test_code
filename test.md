@@ -24,6 +24,7 @@ def shell():
            break
         elif command == 'pwd':
             try:
+                print("HEEEEEEEEEEEE")
                 files = os.getcwd()
                 files = str(files)
                 print(files)
